@@ -1,0 +1,30 @@
+body{
+    @font-face {font-family: PerfectoCalligraphy; src:url("../fonts/PerfectoCalligraphy.ttf");}
+    margin: 0 auto;
+    background-image: url(../../../pictures/pexels-jplenio-1114896.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-family: PerfectoCalligraphy;
+    overflow-x: hidden;
+    h1{
+        font-size: 70px;
+        text-decoration: underline;
+        text-align: center;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: $burgundy;
+        color: $beige;
+    }
+    h2{
+        font-size: 55px;
+        text-decoration: underline;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: $rust;
+        color: $orange;
+
+    }
+    p{
+        font-size: 25px;
+        text-decoration: none;
+    }
+}
