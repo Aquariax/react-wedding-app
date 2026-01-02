@@ -1,0 +1,34 @@
+
+.nav-menu{
+    display: none;
+}
+.desktop_navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $burgundy;
+    height: 8lvh;
+    .logo{
+        height:75px;
+        width:75px;
+        overflow: hidden;
+        border-radius: 50px;
+        .couple_icon{
+            height:125px;
+        }
+    }
+    .nav-links{
+        a{
+            color:white;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        a:hover{
+            color:$orange;
+        }
+    }
+    .menu-nav_link{
+        margin: 1.5lvw;
+    }
+}

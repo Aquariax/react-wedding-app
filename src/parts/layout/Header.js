@@ -1,5 +1,5 @@
 import React from 'react';
-import header from '../pictures/lotus.png';
+import header from '../pictures/IMG_5937.JPG';
 const Header = () => {
 	return (
 		<div className='banner'>

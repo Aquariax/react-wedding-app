@@ -3,4 +3,8 @@
     height: 70lvh;
     margin:0;
     background-color: $glass-overlay;
+    overflow: hidden;
+    .img{
+        margin-top: -30lvh;
+    }
 }

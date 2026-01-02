@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import NavBar from './Navbar';
-import NavItem from './NavItem';
+// import NavItem from './NavItem';
 import NavLinks from './NavLinks';
 import NavDropdown from './NavDropdown';
-import Roses from "../../pictures/roses.png"
+import Roses from "../../pictures/IMG_5725.JPG"
 const Navigation = () => {
 	const [state, setState] = useState({
 		open: false,
@@ -16,17 +16,17 @@ const Navigation = () => {
 	};
 
 	return (
-		<div>
+		<div className="desktop_navigation">
+			<div class='logo' id="nav_logo">
+				<img src={Roses} className="couple_icon" alt='couples emblem' />
+			</div>
 			<NavBar>
-				<div className='logo'>
-					<img src={Roses} alt='couples emblem' />
-				</div>
-				<NavLinks />
-				<NavItem
+				<NavLinks/>
+				{/* <NavItem
 					icon={<i className='fas fa-bars special'></i>}
 					set={setter}
 					opened={state.open}
-				/>
+				/> */}
 				<NavDropdown texts={state.text} />
 			</NavBar>
 		</div>
