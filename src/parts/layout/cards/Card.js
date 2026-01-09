@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { CardData } from './CardData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas, far, fab)
 
 const Card = ({ cards }) => {
 	const [current, setCurrent] = useState(0);
@@ -17,13 +24,10 @@ const Card = ({ cards }) => {
 				<h5>What's in store for everyone</h5>
 			</div>
 			<div className='card-area'>
-				<i className='fas fa-caret-left' onClick={prevCard}></i>
+				{/* <FontAwesomeIcon icon="fas fa-caret-left" className='leftarrow' onClick={prevCard}/> */}
 				{CardData.map((card, index) => {
 					return (
-						<div
-							className={index === current ? 'card viewing' : `card`}
-							key={card.id}
-						>
+						<div className={index === current ? 'card viewing' : `card`} key={card.id}>
 							<div>
 								<div className='card_body'>
 									<p className='card-title'>{card.title}</p>
@@ -38,10 +42,12 @@ const Card = ({ cards }) => {
 									</div>
 								</div>
 							</div>
+							
 						</div>
+						
 					);
 				})}
-				<i className='fas fa-caret-right' onClick={nextCard}></i>
+				{/* <FontAwesomeIcon icon="fas fa-caret-right" className='rightarrow'onClick={nextCard}/> */}
 			</div>
 		</div>
 	);

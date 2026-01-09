@@ -1,26 +1,44 @@
 .carousel {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(39, 39, 39, 0.404);
-  width: 200%;
+  width: 100%;
   padding-top: 3lvh;
   padding-bottom: 3lvh;
 }
+.carousel .heading h3 {
+  font-size: 40px;
+}
+.carousel .heading h5 {
+  font-size: 20px;
+}
+.carousel .card-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .carousel .card {
-  width: 1000px;
+  width: 23%;
   background-color: #d1b38e;
-  margin: 1lvh;
-  padding: 2lvh;
+  margin: 50px;
+  padding: 30px 30px;
   border: 1px solid #a54606;
   border-radius: 15px;
   text-align: center;
 }
 .carousel .card .card-img {
   width: 100%;
-  border-radius: 15px;
+  height: 450px;
+  border-radius: 25px;
+  overflow: hidden;
   border: 1px solid #5a0212;
 }
 .carousel .card h2 {
   margin: 0 auto;
+}
+.carousel .card .tag {
+  font-family: PerfectoCalligraphy;
 }
 
 body {
@@ -58,7 +76,7 @@ body p {
 
 .banner {
   width: 100%;
-  height: 70lvh;
+  height: 800px;
   margin: 0px;
   background-image: url("../../../pictures/New_Banner.JPG");
   background-size: 100%;
@@ -98,6 +116,14 @@ body p {
   padding: 25px 20px;
   font-size: 30px;
   font-weight: bold;
+}
+.banner .banner_window .rsvp {
+  padding: 10px 30px;
+  font-size: 30px;
+  border-radius: 35px;
+  background-color: white;
+  text-decoration: none;
+  color: #5a0212;
 }
 
 .header {
