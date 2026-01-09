@@ -1,6 +1,11 @@
 .banner{
     width: 100%;
     height: 70lvh;
-    margin:0;
+    margin:0px;
     background-color: $glass-overlay;
+    .banner_window{
+        h2{
+            margin:0;
+        }
+    }
 }

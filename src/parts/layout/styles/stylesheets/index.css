@@ -30,6 +30,7 @@ body {
   background-size: 100% 100%;
   color: white;
   overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
 }
 @font-face {
   font-family: PerfectoCalligraphy;
@@ -58,8 +59,11 @@ body p {
 .banner {
   width: 100%;
   height: 70lvh;
-  margin: 0;
+  margin: 0px;
   background-color: rgba(68, 68, 68, 0.404);
+}
+.banner .banner_window h2 {
+  margin: 0;
 }
 
 .header {
@@ -107,7 +111,6 @@ body p {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
 }
 .footer h3 {
   color: white;
@@ -172,14 +175,17 @@ body p {
 }
 
 .desktop_navigation {
+  text-shadow: 2px 2px 4px #000000;
+  background-image: linear-gradient(to right, #a54606, #5a0212);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  background-image: linear-gradient(to right, #a54606, #5a0212);
-  height: 100px;
+  position: sticky;
+  top: 0;
 }
 .desktop_navigation .logo {
+  justify-self: left;
+  margin: 15px;
   height: 75px;
   width: 75px;
   overflow: hidden;
@@ -199,7 +205,7 @@ body p {
   color: #d1b38e;
 }
 .desktop_navigation .menu-nav_link {
-  margin: 1.5lvw;
+  margin-right: 1.5lvw;
 }
 
 .App {

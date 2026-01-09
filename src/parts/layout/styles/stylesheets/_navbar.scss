@@ -2,13 +2,16 @@
     display: none;
 }
 .desktop_navigation{
+    text-shadow: 2px 2px 4px #000000;
+    background-image: linear-gradient(to right, $rust, $burgundy);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(to right, $rust, $burgundy);
-    height: 100px;
+    justify-content:space-between;
+    position: sticky;
+    top:0;
     .logo{
+        justify-self: left;
+        margin: 15px;
         height:75px;
         width:75px;
         overflow: hidden;
@@ -30,6 +33,6 @@
         }
     }
     .menu-nav_link{
-        margin: 1.5lvw;
+        margin-right: 1.5lvw;
     }
 }

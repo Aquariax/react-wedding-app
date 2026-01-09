@@ -12,8 +12,8 @@ import { CardData } from './parts/layout/cards/CardData';
 function App() {
   return (
     <div className="App">
-      <Navigation />
       <Header />
+      <Navigation />
       <Card cards={CardData} />
       <Footer />
 			{/* 
