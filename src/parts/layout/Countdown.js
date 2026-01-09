@@ -24,11 +24,12 @@ const getReturnValues = (countDown) => {
     const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
 
-    const daysLeft = `${days}:days`;
-    const hoursLeft = `${hours}:hours`;
-    const minutesLeft = `${days}:minutes`;
+    const daysLeft = <div className="times" id="day">{days} days</div>;
+    const hoursLeft = <div className="times" id="hour">{hours} hours</div>;
+    const minutesLeft = <div className="times" id="minute">{minutes} minutes</div>;
+    const secondsLeft = <div className="times" id="second">{seconds} seconds</div>
 
-    return [daysLeft, hoursLeft, minutesLeft, seconds];
+    return [<div className="timer">{daysLeft} {hoursLeft} {minutesLeft} {secondsLeft}</div>];
 };
 
 export { useCountdown };

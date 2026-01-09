@@ -1,6 +1,6 @@
 .carousel {
   display: flex;
-  background-color: rgba(68, 68, 68, 0.404);
+  background-color: rgba(39, 39, 39, 0.404);
   width: 200%;
   padding-top: 3lvh;
   padding-bottom: 3lvh;
@@ -60,10 +60,44 @@ body p {
   width: 100%;
   height: 70lvh;
   margin: 0px;
-  background-color: rgba(68, 68, 68, 0.404);
+  background-image: url("../../../pictures/New_Banner.JPG");
+  background-size: 100%;
+  font-family: PerfectoCalligraphy;
+}
+.banner .banner_window {
+  background-color: rgba(39, 39, 39, 0.404);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner .banner_window h1, .banner .banner_window h2 {
+  margin: 0;
+  text-decoration: none;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white;
+  color: white;
+}
+.banner .banner_window h1 {
+  font-size: 110px;
 }
 .banner .banner_window h2 {
-  margin: 0;
+  font-size: 80px;
+}
+.banner .banner_window h3 {
+  font-size: 40px;
+}
+.banner .banner_window .timer {
+  display: flex;
+  justify-content: center;
+}
+.banner .banner_window .timer .times {
+  width: 65px;
+  margin: 30px 20px;
+  padding: 25px 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .header {
@@ -182,6 +216,7 @@ body p {
   justify-content: space-between;
   position: sticky;
   top: 0;
+  height: 110px;
 }
 .desktop_navigation .logo {
   justify-self: left;
@@ -244,8 +279,4 @@ body p {
   to {
     transform: rotate(360deg);
   }
-}
-@font-face {
-  font-family: PerfectoCalligraphy;
-  src: url("../fonts/PerfectoCalligraphy.ttf");
 }/*# sourceMappingURL=index.css.map */
