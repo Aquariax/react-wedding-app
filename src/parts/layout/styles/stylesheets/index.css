@@ -61,10 +61,6 @@ body p {
   height: 70lvh;
   margin: 0;
   background-color: rgba(68, 68, 68, 0.404);
-  overflow: hidden;
-}
-.banner .img {
-  margin-top: -30lvh;
 }
 
 .header {
@@ -101,87 +97,49 @@ body p {
 .header .menu-nav #menu-nav-end {
   border-right: 0px;
 }
-.header .menu-nav .logo {
-  height: 1000px;
-}
 
 .footer {
   background-color: #5a0212;
   width: 100%;
-  height: 9.5lvh;
-  font-size: 25px;
-  text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer .footer_emblem {
-  overflow: hidden;
-  margin-top: 10px;
-}
-.footer .footer_emblem .img2 {
-  margin: -50px 30px -70px 10px;
-  height: 200px;
-}
-.footer .footer_sec_about {
-  width: 40%;
-  display: flex;
-}
-.footer .footer_sec_contact {
-  width: 30%;
-}
-.footer .footer_sec_info {
-  width: 30%;
-}
-.footer a {
-  color: white;
+  height: 3lvh;
+  font-size: 20px;
   text-decoration: none;
 }
-.footer a:hover {
-  color: #F87217;
+
+.App {
+  text-align: center;
 }
 
-.footer_extension {
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  background-color: #5a0212;
-  height: 5lvh;
-  justify-content: center;
-}
-
-.nav-menu {
-  display: none;
-}
-
-.desktop_navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  background-color: #5a0212;
-  height: 8lvh;
-}
-.desktop_navigation .logo {
-  height: 75px;
-  width: 75px;
-  overflow: hidden;
-  border-radius: 50px;
-}
-.desktop_navigation .logo .couple_icon {
-  height: 125px;
-}
-.desktop_navigation .nav-links a {
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  text-decoration: none;
-  font-size: 40px;
-}
-.desktop_navigation .nav-links a:hover {
-  color: #F87217;
-}
-.desktop_navigation .menu-nav_link {
-  margin: 1.5lvw;
 }
 
-.couple_icon {
-  height: 90px;
-  margin: 0px 0 0 0;
-  overflow: hidden;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=index.css.map */

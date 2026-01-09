@@ -1,7 +1,7 @@
 import './parts/layout/styles/stylesheets/index.css';
 import Navigation from './parts/layout/navbar/Navigation';
-import Header from './parts/layout/header';
-import Footer from './parts/layout/footer';
+import Header from './parts/layout/Header';
+import Footer from './parts/layout/Footer';
 // import Top from './parts/layout/Top';
 // import Bottom from './parts/layout/Bottom';
 // import Access from './parts/layout/Access';
@@ -15,7 +15,7 @@ function App() {
       <Navigation />
       <Header />
       <Card cards={CardData} />
-      <Footer/>
+      <Footer />
 			{/* 
 			<Top />
 			<Access />
