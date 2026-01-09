@@ -29,7 +29,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
-  font-family: PerfectoCalligraphy;
   overflow-x: hidden;
 }
 @font-face {
@@ -101,9 +100,106 @@ body p {
 .footer {
   background-color: #5a0212;
   width: 100%;
-  height: 3lvh;
-  font-size: 20px;
+  height: 140px;
+  font-size: 25px;
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer h3 {
+  color: white;
+  margin: 0;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #d1b38e;
+  color: #034727;
+  text-decoration: underline;
+  font-family: PerfectoCalligraphy;
+}
+.footer .footer_emblem {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.footer .footer_emblem .img2 {
+  margin: -50px 30px -70px 10px;
+  height: 200px;
+}
+.footer .footer_sec_about {
+  width: 28%;
+  display: flex;
+}
+.footer .footer_sec_about .blurb {
+  width: 83%;
+}
+.footer .footer_sec_about .blurb p {
+  margin: 0px 0 0 0;
+}
+.footer .footer_sec_contact {
+  width: 20%;
+  display: inherit;
+  flex-direction: column;
+}
+.footer .footer_sec_info {
+  width: 20%;
+  display: inherit;
+  flex-direction: column;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #F87217;
+}
+
+.footer_extension {
+  display: flex;
+  background-color: #5a0212;
+  height: 98px;
+  justify-content: center;
+  overflow: hidden;
+}
+.footer_extension p {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: PerfectoCalligraphy;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.desktop_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #a54606, #5a0212);
+  height: 100px;
+}
+.desktop_navigation .logo {
+  height: 75px;
+  width: 75px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 2px solid #d1b38e;
+}
+.desktop_navigation .logo .couple_icon {
+  height: 125px;
+}
+.desktop_navigation .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: PerfectoCalligraphy;
+}
+.desktop_navigation .nav-links a:hover {
+  color: #d1b38e;
+}
+.desktop_navigation .menu-nav_link {
+  margin: 1.5lvw;
 }
 
 .App {
@@ -142,4 +238,8 @@ body p {
   to {
     transform: rotate(360deg);
   }
+}
+@font-face {
+  font-family: PerfectoCalligraphy;
+  src: url("../fonts/PerfectoCalligraphy.ttf");
 }/*# sourceMappingURL=index.css.map */
