@@ -28,6 +28,9 @@ const Card = ({ cards }) => {
 				{CardData.map((card, index) => {
 					return (
 						<div className={index === current ? 'card viewing' : `card`} key={card.id}>
+
+
+
 							<div>
 								<div className='card_body'>
 									<p className='card-title'>{card.title}</p>
