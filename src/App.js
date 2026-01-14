@@ -1,28 +1,34 @@
 import './parts/layout/styles/stylesheets/index.css';
-import Navigation from './parts/layout/navbar/Navigation';
-import Header from './parts/layout/Header';
-import Footer from './parts/layout/Footer';
-// import Top from './parts/layout/Top';
-// import Bottom from './parts/layout/Bottom';
-// import Access from './parts/layout/Access';
-import Card from './parts/layout/cards/Card';
-// import './parts/layout/styles/compiled/main.css';
-import { CardData } from './parts/layout/cards/CardData';
+import Footer from './parts/layout/Footer'
+import RootLayout from "./parts/layout/RootLayout"
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import Home from './parts/layout/pages/Home';
+import WeddingDay from './parts/layout/pages/WeddingDay';
+import OurStory from './parts/layout/pages/OurStory';
+import FAQ from './parts/layout/pages/FAQ';
+import Travel from './parts/layout/pages/Travel';
+import RSVP from './parts/layout/pages/RSVP'
+import GiftRegistry from './parts/layout/pages/GiftRegistry';
+// import Home from './parts/layout/pages/Home';
+// import Home from './parts/layout/pages/Home';
+
 
 function App() {
+
+  const router = createBrowserRouter(createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+      <Route index element={<Home />}/>
+      <Route path="wedding_day" element={<WeddingDay />}/>
+      <Route path="our_story" element={<OurStory/>}/>
+      <Route path="FAQ" element={<FAQ/>}/>
+      <Route path="travel" element={<Travel />}/>
+      <Route path="gift_registry" element={<GiftRegistry />}/>
+      <Route path="RSVP" element={<RSVP />}/>
+    </Route>
+  ))
+
   return (
-    <div className="App">
-      <Header />
-      <Navigation />
-      <Card cards={CardData} />
-      <Footer/>
-			{/* 
-			<Top />
-			<Access />
-			<Bottom />
-			
-			 */}
-    </div>
+    <RouterProvider router={router} className="App"/>    
   );
 }
 export default App;

@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .nav-menu{
     display: none;
 }
@@ -24,17 +27,26 @@
         }
     }
     .nav-links{ 
-        a{
-            color:white;
-            text-decoration: none;
-            font-size: 50px;
-            font-family: $fancy;
+        p{
+        text-decoration: none;
+        font-size: 50px;
+        font-family: $fancy;
+        margin: 0;
+        color:white;
         }
-        a:hover{
-            color:$beige;
+        p:hover{
+            color:$forest;
         }
-    }
+        .active{
+            p{
+                color: $beige; 
+            }  
+        }
+        .nav-auth{
+            display: flex;
+            }
     .menu-nav_link{
         margin-right: 1.5lvw;
     }
+    } 
 }
