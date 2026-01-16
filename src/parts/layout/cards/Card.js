@@ -39,9 +39,7 @@ const Card = ({ cards }) => {
 								    </div>
 									<p className='middle'>{card.text}</p>
 									<div className='bottom'>
-										<p className='subtext'>For:</p>
-										<p className='tag'>{card.tag}</p>
-										<a href='#!'>Learn More</a>
+
 									</div>
 								</div>
 							</div>
