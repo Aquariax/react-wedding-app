@@ -4,6 +4,12 @@
 .nav-menu{
     display: none;
 }
+.burger{
+    display:none;
+    @media #{$mobile}{
+        display:flex;
+    }
+}
 .desktop_navigation{
     text-shadow: 2px 2px 4px #000000;
     background-image: linear-gradient(to right, $rust, $burgundy);
@@ -45,8 +51,55 @@
         .nav-auth{
             display: flex;
             }
-    .menu-nav_link{
-        margin-right: 1.5lvw;
-    }
+        .menu-nav_link{
+            margin-right: 1.5lvw;
+        }
+        @media #{$mobile}{
+            display:none;
+        }   
     } 
+    @media #{$mobile}{
+        z-index: 2;
+        height:85px;
+        .logo{
+            display: none;
+        }
+        .nav-button{
+            color:white;
+            font-size:50px;
+            position: absolute;
+            top: 20px;
+            left:10px;
+        }
+        .dropdownClose {
+                background-image: linear-gradient(to bottom, $rust, $burgundy);
+                max-width: 16rem;
+                position: absolute;
+                top: 85px;
+                left: 0rem;
+                animation: slide2 750ms;
+                animation-fill-mode: forwards;
+                .nav-menu {
+                    display: flex;
+                    flex-direction: column;
+                    width: 250px;
+                    align-items: center;
+                    p {
+                        border-bottom:1px solid $beige;
+                        padding-top: 20px;
+                        width:249px;
+                        height: 60px;
+                        margin: 0 auto;
+                        text-align: center;
+                        text-decoration: none;
+                        color: $beige;
+                    }
+                }
+                &Close {
+                    animation: slide 500ms;
+                    animation-fill-mode: forwards;
+                }
+        }
+    }
+  
 }

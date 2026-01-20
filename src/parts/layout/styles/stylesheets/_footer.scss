@@ -26,6 +26,9 @@
         .img2{
             margin: -50px 30px -70px 10px;
             height:200px;
+        }
+        @media #{$mobile}{
+            display: none;
         }        
     }
     .footer_sec_about{
@@ -55,6 +58,25 @@
     a:hover{
         color:$orange;
     }
+    @media #{$mobile}{
+        flex-direction: column;
+        height: auto;
+        font-size: 20px;
+        .footer_sec_about{
+            width: 100%;
+            flex-direction: column;
+            p{
+               font-size: 20px; 
+            }
+        }
+        .footer_sec_contact{
+            width: 100%;
+            
+        }
+        .footer_sec_info{
+            width: 100%;
+        }
+    }
 }
 .footer_extension{
     display: flex;
@@ -66,5 +88,10 @@
         font-weight: bold;
         font-size: 40px;
         font-family: $fancy;
+    }
+    @media #{$mobile}{
+        p{
+            font-size: 27px;
+        }
     }
 }

@@ -24,20 +24,17 @@ const Card = ({ cards }) => {
 				<h5>What's in store for everyone</h5>
 			</div>
 			<div className='card-area'>
-				{/* <FontAwesomeIcon icon="fas fa-caret-left" className='leftarrow' onClick={prevCard}/> */}
+				<FontAwesomeIcon icon="fas fa-caret-left" className='leftarrow' onClick={prevCard}/>
 				{CardData.map((card, index) => {
 					return (
 						<div className={index === current ? 'card viewing' : `card`} key={card.id}>
-
-
-
 							<div>
 								<div className='card_body'>
-									<p className='card-title'>{card.title}</p>
+									<div className='card-title'>{card.title}</div>
                                     <div className='card-img'>
-									    <img src={card.img} alt='pictures of different wedding day roles' />
+									    <img src={card.img} alt='pictures of different wedding day roles' className='fixer'/>
 								    </div>
-									<p className='middle'>{card.text}</p>
+									<div className='middle'>{card.text}</div>
 									<div className='bottom'>
 
 									</div>
@@ -48,7 +45,7 @@ const Card = ({ cards }) => {
 						
 					);
 				})}
-				{/* <FontAwesomeIcon icon="fas fa-caret-right" className='rightarrow'onClick={nextCard}/> */}
+				<FontAwesomeIcon icon="fas fa-caret-right" className='rightarrow'onClick={nextCard}/>
 			</div>
 		</div>
 	);

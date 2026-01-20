@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { NavLink } from 'react-router-dom';
 
 library.add(fas, far, fab)
 
@@ -30,9 +31,8 @@ const Footer = () => {
 				</div>
 				<div className='footer_sec_info'>
 					<h3>Useful Links</h3>
-					<a href='#'>
-						<FontAwesomeIcon icon="fas fa-info-circle" /> FAQ
-					</a>
+					<NavLink to='/FAQ'><FontAwesomeIcon icon="fas fa-info-circle" />FAQ</NavLink>
+					
 				</div>
 			</div>
 			<div className='footer_extension'>

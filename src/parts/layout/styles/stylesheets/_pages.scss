@@ -55,16 +55,60 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    img{
+        height: 500px;
+        width: 500px;
+    }
     .tale{
         background-color: white;
         width: 2000px;
-        height:100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         .story_blurb{
-            width: 80%;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .introduction{
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+                height:510px;
+                .corner{
+                    display: flex;
+                    img{
+                        width: 46%;
+                        margin: 10px 10px 0px 10px;
+                        height: 310px;
+                        border:4px solid $rust;
+                    }
+                    p{
+                        margin: 10px 10px 0px 10px;
+                    }
+                }
+                img{
+                    width: 40%;
+                }
+                
+            }
+            .graduation_day{
+                text-align: left;
+                width: 48%;
+                .corner{
+                    display: flex;
+                    img{
+                        width: 46%;
+                        margin: 10px 10px 0px 10px;
+                        border:4px solid $forest;
+                    }
+                    p{
+                        margin: 10px 10px 0px 10px;
+                    }
+                }
+            }
+
         }
         h1{
             -webkit-text-stroke-width: 0.5px;
@@ -78,6 +122,21 @@
         }
         p{
             color: black;
+            width: 48%;
+            text-align: justify;
+            font-size: 25px;
+        }
+        h2{
+            color: $burgundy;
+            font-family: $fancy;
+            width: 90%;
+            height: 70px;
+            margin: 10px;
+            text-align: left;
+        }
+        .longtext{
+            width: 97%;
+            margin: 0px 10px;
         }
     }
 }
