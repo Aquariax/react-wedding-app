@@ -27,7 +27,7 @@ const OurStory = () => {
               days walking around Santa Barbara, Solvang, or Santa Maria. We got to go to a few of Lexy's 
               favorite places like Disneyland and Bettina Pizza,
                and even spent holidays together like our first time in a church together that Easter.
-              </p><img src={disney} className="disney" alt="picture of us at our first disney trip"/>
+              </p><img src={disney} className="disney" alt="us at our first disney trip"/>
             </div>
             
           </div>
@@ -49,7 +49,7 @@ const OurStory = () => {
                before Lexy moved back to Oregon for the summer which preceded her trans-Atlantic move 
               to England for her graduate program, so the time for us to 
               </p>
-              <img src={graduate} className="graduate" alt="picture of us walking across a bridge for graduation"/>
+              <img src={graduate} className="graduate" alt="us walking across a bridge for graduation"/>
             </div>
             
             <p className='longtext'>
@@ -77,9 +77,9 @@ const OurStory = () => {
               </p>
             </div>
             <div className='trips'>
-              <img src={london} alt="picture of us at river thames"/>
-              <img src={escape} alt="picture of us finishing the escape room"/> 
-              <img src={festival} alt="picture of us at lantern festival"/>
+              <img src={london} alt="us at river thames"/>
+              <img src={escape} alt="us finishing the escape room"/> 
+              <img src={festival} alt="us at lantern festival"/>
             </div>
                        
           </div>
@@ -87,7 +87,7 @@ const OurStory = () => {
           <div className='proposed'>
             <h2>Where We Are Now</h2>
             <div className='corner'>
-              <img src={proposal} alt="picture of proposal"/>
+              <img src={proposal} alt="proposal"/>
               <p>
                 As you can imagine, long-distance wasn’t the easiest on our relationship - it never is for any 
                 relationship - but over time our romance flourished and was nourished by the strong foundation 
