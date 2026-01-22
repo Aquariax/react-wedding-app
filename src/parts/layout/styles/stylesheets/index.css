@@ -76,37 +76,52 @@
     top: 20px;
     left: 10px;
   }
-  .desktop_navigation .dropdownClose {
-    background-image: linear-gradient(to bottom, #a54606, #5a0212);
-    max-width: 16rem;
+  .desktop_navigation .dropdown, .desktop_navigation .dropdownClose {
+    background-image: linear-gradient(to right, #a54606, #5a0212);
+    width: 100%;
     position: absolute;
     top: 85px;
     left: 0rem;
-    animation: slide2 750ms;
+    animation: slide2 500ms;
     animation-fill-mode: forwards;
   }
-  .desktop_navigation .dropdownClose .nav-menu {
+  .desktop_navigation .dropdown .nav-menu, .desktop_navigation .dropdownClose .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 250px;
     align-items: center;
   }
-  .desktop_navigation .dropdownClose .nav-menu p {
+  .desktop_navigation .dropdown .nav-menu p, .desktop_navigation .dropdownClose .nav-menu p {
     border-bottom: 1px solid #d1b38e;
     padding-top: 20px;
-    width: 249px;
+    width: 100vw;
     height: 60px;
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
     color: #d1b38e;
   }
-  .desktop_navigation .dropdownCloseClose {
+  .desktop_navigation .dropdownClose, .desktop_navigation .dropdownCloseClose {
     animation: slide 500ms;
     animation-fill-mode: forwards;
   }
 }
 
+@keyframes slide {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-18rem) scaleY(0);
+  }
+}
+@keyframes slide2 {
+  from {
+    transform: translateY(-18rem) scaleY(0);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .carousel {
   display: flex;
   flex-direction: column;
@@ -465,22 +480,22 @@ body p {
 @media (max-width: 500px) {
   .footer {
     flex-direction: column;
+    align-items: center;
     height: auto;
     font-size: 20px;
-    padding: 0px 10px;
   }
   .footer .footer_sec_about {
-    width: 100%;
+    width: 95%;
     flex-direction: column;
   }
   .footer .footer_sec_about p {
     font-size: 20px;
   }
   .footer .footer_sec_contact {
-    width: 100%;
+    width: 95%;
   }
   .footer .footer_sec_info {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -669,7 +684,7 @@ body p {
 }
 @media (max-width: 500px) {
   .story .tale {
-    width: 100%;
+    width: 95%;
   }
   .story .tale .story_blurb {
     width: 100%;

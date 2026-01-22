@@ -71,35 +71,53 @@
             top: 20px;
             left:10px;
         }
-        .dropdownClose {
-                background-image: linear-gradient(to bottom, $rust, $burgundy);
-                max-width: 16rem;
-                position: absolute;
-                top: 85px;
-                left: 0rem;
-                animation: slide2 750ms;
+        .dropdown, .dropdownClose {
+            background-image: linear-gradient(to right, $rust, $burgundy);
+            width: 100%;
+            position: absolute;
+            top: 85px;
+            left: 0rem;
+            animation: slide2 500ms;
+            animation-fill-mode: forwards;
+
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    border-bottom:1px solid $beige;
+                    padding-top: 20px;
+                    width:100vw;
+                    height: 60px;
+                    margin: 0 auto;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $beige;
+                }
+                
+            }
+            &Close {
+                animation: slide 500ms;
                 animation-fill-mode: forwards;
-                .nav-menu {
-                    display: flex;
-                    flex-direction: column;
-                    width: 250px;
-                    align-items: center;
-                    p {
-                        border-bottom:1px solid $beige;
-                        padding-top: 20px;
-                        width:249px;
-                        height: 60px;
-                        margin: 0 auto;
-                        text-align: center;
-                        text-decoration: none;
-                        color: $beige;
-                    }
-                }
-                &Close {
-                    animation: slide 500ms;
-                    animation-fill-mode: forwards;
-                }
+            }
+                
         }
     }
   
+}
+@keyframes slide {
+    from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-18rem) scaleY(0);
+	}
+}
+@keyframes slide2 {
+	from {
+		transform: translateY(-18rem) scaleY(0);
+	}
+	to {
+		transform: translateY(0);
+	}
 }

@@ -19,8 +19,8 @@ const Navigation = () => {
 	});
 	const setter = () => {
 		!state.open
-			? setState({ open: true, text: 'dropdownClose' })
-			: setState({ open: false, text: 'dropdown' });
+		? setState({ open: true, text: 'dropdownClose' })
+		: setState({ open: false, text: 'dropdown' });
 	};
 
 	return (
@@ -31,12 +31,11 @@ const Navigation = () => {
 			<NavBar>
 				<NavLinks />
 				<NavItem
-					
 					icon={<FontAwesomeIcon className="burger" icon="fas fa-bars special"/>}
 					set={setter}
 					opened={state.open}
 				/>
-				<NavDropdown texts={state.text}/>
+				<NavDropdown texts={state.text} set={setter} opened={state.open}/>
 			</NavBar>
 			
 		</div>
