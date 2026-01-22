@@ -1,4 +1,4 @@
-import React from 'react'
+
 import escape from "../../pictures/escaperoom.JPG"
 import disney from "../../pictures/disneytrip.jpg"
 import festival from "../../pictures/festivals.jpg"

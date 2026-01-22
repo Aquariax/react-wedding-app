@@ -1,4 +1,4 @@
-import React from 'react';
+
 import img from '../pictures/IMG_6754.JPG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'

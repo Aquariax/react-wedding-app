@@ -1,6 +1,3 @@
-import React from 'react';
-import NavLinkItem from './NavLinkItem';
-import RSVP from "../pages/RSVP"
 import { NavLink } from 'react-router-dom';
 
 const NavLinks = () => {

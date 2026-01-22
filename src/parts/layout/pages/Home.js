@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Card from '../cards/Card';
 import { CardData } from '../cards/CardData';
 import Header from '../Header';

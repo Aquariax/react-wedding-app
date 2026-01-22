@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useCountdown } from './Countdown'
 import { NavLink } from 'react-router-dom';
 const Header = () => {
