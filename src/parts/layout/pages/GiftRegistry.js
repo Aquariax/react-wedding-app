@@ -11,7 +11,7 @@ const GiftRegistry = () => {
             </div>
             
             <div className='gift_button'>
-                <a href="https://www.myregistry.com/wedding-registry/alexis-gillette-and-robert-harris-colorado-springs-co/5249833/giftlist" target="_blank">Go to Gift Registry</a>
+                <a href="https://www.myregistry.com/wedding-registry/alexis-gillette-and-robert-harris-colorado-springs-co/5249833/giftlist" target="_blank" rel="noreferrer noopener">Go to Gift Registry</a>
             </div>
             
         </div>

@@ -66,7 +66,9 @@
         }
         .nav-button{
             color:white;
+            background-color: #ffffff00;
             font-size:50px;
+            border: 0px;
             position: absolute;
             top: 20px;
             left:10px;
@@ -79,7 +81,6 @@
             left: 0rem;
             animation: slide2 500ms;
             animation-fill-mode: forwards;
-
             .nav-menu {
                 display: flex;
                 flex-direction: column;

@@ -1,5 +1,4 @@
 import './parts/layout/styles/stylesheets/index.css';
-import Footer from './parts/layout/Footer'
 import RootLayout from "./parts/layout/RootLayout"
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import Home from './parts/layout/pages/Home';
@@ -9,8 +8,7 @@ import FAQ from './parts/layout/pages/FAQ';
 import Travel from './parts/layout/pages/Travel';
 import RSVP from './parts/layout/pages/RSVP'
 import GiftRegistry from './parts/layout/pages/GiftRegistry';
-// import Home from './parts/layout/pages/Home';
-// import Home from './parts/layout/pages/Home';
+
 
 
 function App() {

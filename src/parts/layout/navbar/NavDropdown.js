@@ -1,4 +1,4 @@
-import react, {useState} from 'react';
+
 import NavDropdownItem from './NavDropdownitem';
 import { NavLink } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const NavDropdown = (props) => {
 				<NavDropdownItem><NavLink to='/travel'><p className='menu-nav_link'>Travel</p></NavLink></NavDropdownItem>
 				<NavDropdownItem><NavLink to='/gift_registry'><p className='menu-nav_link'>Gift Registry</p></NavLink></NavDropdownItem>
 				<NavDropdownItem><NavLink to='/FAQ'><p className='menu-nav_link'>Q&A</p></NavLink></NavDropdownItem>
-				<NavDropdownItem ><NavLink to='/RSVP'><p className='menu-nav_link'>Rsvp</p></NavLink></NavDropdownItem>
+				<NavDropdownItem><NavLink to='/RSVP'><p className='menu-nav_link'>Rsvp</p></NavLink></NavDropdownItem>
 			</div>
 		</div>
 	);
