@@ -6,11 +6,11 @@
   display: none;
 }
 
-.burger {
+.nav-button {
   display: none;
 }
 @media (max-width: 500px) {
-  .burger {
+  .nav-button {
     display: flex;
   }
 }
