@@ -6,6 +6,10 @@
         height: 1502px;
         border:0;
         background-color: $glass-overlay;
+        @media #{$mobile}{
+            width: 410px;
+            height: 1802px;
+        }
     }
 }
 
@@ -48,6 +52,23 @@
             }
         }
     }
+    @media #{$mobile}{
+        h1{
+            margin: 0 auto;
+        }
+        .registry-info{
+            width: 80%;
+            height: 620px;
+        .gift_button{
+            width: 200px;
+            padding: 7px 7px 10px 7px;
+            a{
+                font-size: 22px;
+            } 
+        }
+    }
+        
+    }
 }
 
 .story{
@@ -69,46 +90,54 @@
         .story_blurb{
             width: 90%;
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-between;
+            align-items: center;
+            .corner{
+                display: flex;
+                img{
+                    width: 46%;
+                    margin: 10px 10px 0px 10px;
+                    
+                }
+                p{
+                    margin: 10px 10px 0px 10px;
+                }
+            }
             .introduction{
-                width: 48%;
+                width: 65%;
                 display: flex;
                 flex-direction: column;
-                height:510px;
-                .corner{
-                    display: flex;
-                    img{
-                        width: 46%;
-                        margin: 10px 10px 0px 10px;
-                        height: 310px;
-                        border:4px solid $rust;
-                    }
-                    p{
-                        margin: 10px 10px 0px 10px;
-                    }
-                }
                 img{
-                    width: 40%;
+                    width: 46%;
                 }
                 
             }
             .graduation_day{
                 text-align: left;
-                width: 48%;
-                .corner{
+                width: 65%;
+                margin: 0 auto;
+                
+            }
+            .growing_relationship{
+                text-align: left;
+                width: 65%;
+                margin: 10px auto;
+                .trips{
                     display: flex;
+                    justify-content: space-between;
+                    margin: 10px auto;
+                    width:98%;
+
                     img{
-                        width: 46%;
-                        margin: 10px 10px 0px 10px;
-                        border:4px solid $forest;
-                    }
-                    p{
-                        margin: 10px 10px 0px 10px;
+                        width: 32%;
                     }
                 }
             }
-
+            .proposed{
+                width: 60%;
+            }
+       
         }
         h1{
             -webkit-text-stroke-width: 0.5px;
@@ -130,13 +159,55 @@
             color: $burgundy;
             font-family: $fancy;
             width: 90%;
-            height: 70px;
-            margin: 10px;
+            margin: 10px 0;
             text-align: left;
         }
         .longtext{
             width: 97%;
             margin: 0px 10px;
+        }
+        @media #{$mobile} {
+            width: 100%;
+            .story_blurb{
+                width: 100%;
+                
+                .corner{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0 auto;
+                    img{
+                        width: 97%;
+                        
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+                .introduction, .graduation_day, .growing_relationship, .proposed{
+                    width: 94%;
+                    
+                    .trips{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            }
+            p{
+                width: 100%;
+            }
+            h2{
+                font-size: 36px;
+                width: 100%;
+                text-align: center;
+                margin: 10px auto;
+            }
+            
         }
     }
 }
@@ -150,11 +221,11 @@
     .wedding_text{
         background-color: $beige;
         width: 50%;
-        height: 1200px;
+        // height: 1200px;
         display: inherit;
         flex-direction: column;
         align-items: center;
-        H1{
+        h1{
             -webkit-text-stroke-width: 0.5px;
             -webkit-text-stroke-color: white;
             color: $burgundy;
@@ -169,7 +240,24 @@
             }
             
         }
+        @media #{$mobile}{
+            width: 90%;
+            font-size: 20px;
+            h1{
+                font-size: 55px;
+            }
+            .wedding_details{
+            width: 90%;
+            font-size: 24px;
+            margin: 0 auto;
+            li{
+                margin: 0px 0px 20px 0px;
+            }
+            
+        }
+        }
     }
+    
 }
 
 .faq{
@@ -184,7 +272,7 @@
         display: inherit;
         flex-direction: column;
         align-items: center;
-        H1{
+        h1{
             -webkit-text-stroke-width: 0.5px;
             -webkit-text-stroke-color: white;
             color: $burgundy;
@@ -203,6 +291,33 @@
                     text-decoration: underline;
                 }
             }
+        }
+    }
+    @media #{$mobile}{
+        .asked{
+            width: 90%;
+            h1{
+                font-size: 50px;
+            }
+            h3{
+                margin-bottom: 20px;
+            }
+            .questions{
+                text-align: center;
+                ul{
+                    width: 100%;
+                    margin: 10px -50px;
+                    list-style-type: none;
+                    li{
+                        width: 95%;
+                        font-size: 22px;
+                        text-align: left;
+                        margin-top: 10px;
+                    }
+                }
+                
+            }
+            
         }
     }
 }
@@ -261,6 +376,32 @@
                 margin-bottom: 115px;
             }
         }
+        @media #{$mobile}{
+            width: 90%;
+            
+            h1,h2{
+                margin: 10px auto;
+                text-align: center;
+            }
+            .advice, .fun_times{
+                flex-direction: column;
+                margin: 0 auto;
+                .blocks, .blocks2, .blocks3{
+                    width: 100%;
+                    margin: 0 auto;
+                    h2{
+                        margin-top: 10px;
+                    }
+                    li{
+                        font-size: 23px;
+                    }
+                }
+                .shopping{
+                margin-bottom: 0px;
+            }
+            }
+        }
 
     }
+    
 }

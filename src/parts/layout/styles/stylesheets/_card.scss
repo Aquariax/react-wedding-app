@@ -7,11 +7,25 @@
     padding-top: 3lvh;
     padding-bottom: 3lvh;
     .heading{
+        text-align: center;
+        font-family: $fancy;
         h3{
-            font-size: 40px;
+            font-size: 60px;
+            margin: 0 auto;
         }
         h5{
-            font-size: 20px;
+            font-size: 40px;
+            margin:0 auto;
+        }
+        @media #{$mobile}{
+            h3{
+                font-size: 45px;
+                margin: 0 auto;
+            }
+            h5{
+                font-size: 30px;
+                margin:0 auto;
+            }
         }
     }
     .card-area{
@@ -30,28 +44,26 @@
             .leftarrow{
                 display: flex;
                 z-index: 1;
-			    font-size: 3rem;
+			    font-size: 1.5rem;
 			    color: $forest $orange;
                 position: relative;
                 top:325px;
                 left:10px;
 			    background-color: $beige;
 			    border: 3px solid $burgundy;
-			    padding: 0.1rem .2rem 0.1rem 0.2rem;
 			    border-radius: 15px;
 			    cursor: pointer;
             }
             .rightarrow{
                 display: flex;
                 z-index: 1;
-			    font-size: 3rem;
+			    font-size: 1.5rem;
                 position: relative;
                 top:325px;
                 right:10px;
 			    color: $forest $orange;
 			    background-color: $beige;
 			    border: 3px solid $burgundy;
-			    padding: 0.1rem .2rem 0.1rem 0.2rem;
 			    border-radius: 15px;
             }
         }   
@@ -72,6 +84,9 @@
             border-radius: 25px;
             overflow: hidden;
             border: $border;
+        }
+        .card-title{
+            font-size:45px;
         }
         div{
           .middle{
@@ -127,6 +142,7 @@
                 height: 255px;
             }
             .card-title{
+                font-size:30px;
                 margin: -10px auto 10px auto;
             }
             .fixer{

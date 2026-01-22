@@ -116,11 +116,27 @@
   padding-top: 3lvh;
   padding-bottom: 3lvh;
 }
+.carousel .heading {
+  text-align: center;
+  font-family: PerfectoCalligraphy;
+}
 .carousel .heading h3 {
-  font-size: 40px;
+  font-size: 60px;
+  margin: 0 auto;
 }
 .carousel .heading h5 {
-  font-size: 20px;
+  font-size: 40px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .carousel .heading h3 {
+    font-size: 45px;
+    margin: 0 auto;
+  }
+  .carousel .heading h5 {
+    font-size: 30px;
+    margin: 0 auto;
+  }
 }
 .carousel .card-area {
   display: flex;
@@ -141,28 +157,26 @@
   .carousel .card-area .leftarrow {
     display: flex;
     z-index: 1;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #034727 #F87217;
     position: relative;
     top: 325px;
     left: 10px;
     background-color: #d1b38e;
     border: 3px solid #5a0212;
-    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
     border-radius: 15px;
     cursor: pointer;
   }
   .carousel .card-area .rightarrow {
     display: flex;
     z-index: 1;
-    font-size: 3rem;
+    font-size: 1.5rem;
     position: relative;
     top: 325px;
     right: 10px;
     color: #034727 #F87217;
     background-color: #d1b38e;
     border: 3px solid #5a0212;
-    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
     border-radius: 15px;
   }
 }
@@ -182,6 +196,9 @@
   border-radius: 25px;
   overflow: hidden;
   border: 1px solid #5a0212;
+}
+.carousel .card .card-title {
+  font-size: 45px;
 }
 .carousel .card div .middle ul {
   width: 90%;
@@ -226,6 +243,7 @@
     height: 255px;
   }
   .carousel .card .card-title {
+    font-size: 30px;
     margin: -10px auto 10px auto;
   }
   .carousel .card .fixer {
@@ -449,6 +467,7 @@ body p {
     flex-direction: column;
     height: auto;
     font-size: 20px;
+    padding: 0px 10px;
   }
   .footer .footer_sec_about {
     width: 100%;
@@ -493,6 +512,12 @@ body p {
   border: 0;
   background-color: rgba(39, 39, 39, 0.404);
 }
+@media (max-width: 500px) {
+  .rsvp-form .form {
+    width: 410px;
+    height: 1802px;
+  }
+}
 
 .registry-notice {
   height: 960px;
@@ -533,6 +558,22 @@ body p {
 .registry-notice .registry-info .gift_button a {
   color: white;
 }
+@media (max-width: 500px) {
+  .registry-notice h1 {
+    margin: 0 auto;
+  }
+  .registry-notice .registry-info {
+    width: 80%;
+    height: 620px;
+  }
+  .registry-notice .registry-info .gift_button {
+    width: 200px;
+    padding: 7px 7px 10px 7px;
+  }
+  .registry-notice .registry-info .gift_button a {
+    font-size: 22px;
+  }
+}
 
 .story {
   display: flex;
@@ -555,44 +596,49 @@ body p {
 .story .tale .story_blurb {
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.story .tale .story_blurb .introduction {
-  width: 48%;
-  display: flex;
   flex-direction: column;
-  height: 510px;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.story .tale .story_blurb .introduction .corner {
+.story .tale .story_blurb .corner {
   display: flex;
 }
-.story .tale .story_blurb .introduction .corner img {
+.story .tale .story_blurb .corner img {
   width: 46%;
   margin: 10px 10px 0px 10px;
-  height: 310px;
-  border: 4px solid #a54606;
 }
-.story .tale .story_blurb .introduction .corner p {
+.story .tale .story_blurb .corner p {
   margin: 10px 10px 0px 10px;
 }
+.story .tale .story_blurb .introduction {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
 .story .tale .story_blurb .introduction img {
-  width: 40%;
+  width: 46%;
 }
 .story .tale .story_blurb .graduation_day {
   text-align: left;
-  width: 48%;
+  width: 65%;
+  margin: 0 auto;
 }
-.story .tale .story_blurb .graduation_day .corner {
+.story .tale .story_blurb .growing_relationship {
+  text-align: left;
+  width: 65%;
+  margin: 10px auto;
+}
+.story .tale .story_blurb .growing_relationship .trips {
   display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 98%;
 }
-.story .tale .story_blurb .graduation_day .corner img {
-  width: 46%;
-  margin: 10px 10px 0px 10px;
-  border: 4px solid #034727;
+.story .tale .story_blurb .growing_relationship .trips img {
+  width: 32%;
 }
-.story .tale .story_blurb .graduation_day .corner p {
-  margin: 10px 10px 0px 10px;
+.story .tale .story_blurb .proposed {
+  width: 60%;
 }
 .story .tale h1 {
   -webkit-text-stroke-width: 0.5px;
@@ -614,13 +660,52 @@ body p {
   color: #5a0212;
   font-family: PerfectoCalligraphy;
   width: 90%;
-  height: 70px;
-  margin: 10px;
+  margin: 10px 0;
   text-align: left;
 }
 .story .tale .longtext {
   width: 97%;
   margin: 0px 10px;
+}
+@media (max-width: 500px) {
+  .story .tale {
+    width: 100%;
+  }
+  .story .tale .story_blurb {
+    width: 100%;
+  }
+  .story .tale .story_blurb .corner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .story .tale .story_blurb .corner img {
+    width: 97%;
+  }
+  .story .tale .story_blurb .corner p {
+    margin: 0;
+  }
+  .story .tale .story_blurb .introduction, .story .tale .story_blurb .graduation_day, .story .tale .story_blurb .growing_relationship, .story .tale .story_blurb .proposed {
+    width: 94%;
+  }
+  .story .tale .story_blurb .introduction .trips, .story .tale .story_blurb .graduation_day .trips, .story .tale .story_blurb .growing_relationship .trips, .story .tale .story_blurb .proposed .trips {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .story .tale .story_blurb .introduction .trips img, .story .tale .story_blurb .graduation_day .trips img, .story .tale .story_blurb .growing_relationship .trips img, .story .tale .story_blurb .proposed .trips img {
+    width: 100%;
+  }
+  .story .tale p {
+    width: 100%;
+  }
+  .story .tale h2 {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
 }
 
 .wedding_schedule {
@@ -633,12 +718,11 @@ body p {
 .wedding_schedule .wedding_text {
   background-color: #d1b38e;
   width: 50%;
-  height: 1200px;
   display: inherit;
   flex-direction: column;
   align-items: center;
 }
-.wedding_schedule .wedding_text H1 {
+.wedding_schedule .wedding_text h1 {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: white;
   color: #5a0212;
@@ -651,6 +735,23 @@ body p {
 }
 .wedding_schedule .wedding_text .wedding_details li {
   margin: 0px 0px 20px 0px;
+}
+@media (max-width: 500px) {
+  .wedding_schedule .wedding_text {
+    width: 90%;
+    font-size: 20px;
+  }
+  .wedding_schedule .wedding_text h1 {
+    font-size: 55px;
+  }
+  .wedding_schedule .wedding_text .wedding_details {
+    width: 90%;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  .wedding_schedule .wedding_text .wedding_details li {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 .faq {
@@ -667,7 +768,7 @@ body p {
   flex-direction: column;
   align-items: center;
 }
-.faq .asked H1 {
+.faq .asked h1 {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: white;
   color: #5a0212;
@@ -686,6 +787,31 @@ body p {
 }
 .faq .asked .questions li a {
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .faq .asked {
+    width: 90%;
+  }
+  .faq .asked h1 {
+    font-size: 50px;
+  }
+  .faq .asked h3 {
+    margin-bottom: 20px;
+  }
+  .faq .asked .questions {
+    text-align: center;
+  }
+  .faq .asked .questions ul {
+    width: 100%;
+    margin: 10px -50px;
+    list-style-type: none;
+  }
+  .faq .asked .questions ul li {
+    width: 95%;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px;
+  }
 }
 
 .travel {
@@ -740,6 +866,32 @@ body p {
 }
 .travel .activities .fun_times .shopping {
   margin-bottom: 115px;
+}
+@media (max-width: 500px) {
+  .travel .activities {
+    width: 90%;
+  }
+  .travel .activities h1, .travel .activities h2 {
+    margin: 10px auto;
+    text-align: center;
+  }
+  .travel .activities .advice, .travel .activities .fun_times {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .travel .activities .advice .blocks, .travel .activities .advice .blocks2, .travel .activities .advice .blocks3, .travel .activities .fun_times .blocks, .travel .activities .fun_times .blocks2, .travel .activities .fun_times .blocks3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .travel .activities .advice .blocks h2, .travel .activities .advice .blocks2 h2, .travel .activities .advice .blocks3 h2, .travel .activities .fun_times .blocks h2, .travel .activities .fun_times .blocks2 h2, .travel .activities .fun_times .blocks3 h2 {
+    margin-top: 10px;
+  }
+  .travel .activities .advice .blocks li, .travel .activities .advice .blocks2 li, .travel .activities .advice .blocks3 li, .travel .activities .fun_times .blocks li, .travel .activities .fun_times .blocks2 li, .travel .activities .fun_times .blocks3 li {
+    font-size: 23px;
+  }
+  .travel .activities .advice .shopping, .travel .activities .fun_times .shopping {
+    margin-bottom: 0px;
+  }
 }
 
 .App {

@@ -23,22 +23,18 @@ const OurStory = () => {
                 app hinge while we both were in California. Robert was stationed at Vandenberg SFB and 
                 Lexy was finishing her undergraduate college education at Westmont College. After chatting 
                 and getting to know each other for three weeks, we started by going out on small 
-              dates to parks for picnics and to cat cafes, out to dinner, to see movies, or 
-              </p><img src={disney} className="disney"/>
-            </div>
-            <p className="longtext"> 
-                spend the 
+              dates to parks for picnics and to cat cafes, out to dinner, to see movies, or spend the 
               days walking around Santa Barbara, Solvang, or Santa Maria. We got to go to a few of Lexy's 
               favorite places like Disneyland and Bettina Pizza,
-               and even spent holidays together like our 
-              first time in a church together that Easter.
-            </p>
+               and even spent holidays together like our first time in a church together that Easter.
+              </p><img src={disney} className="disney"/>
+            </div>
             
           </div>
           <div className="graduation_day">
             <h2>Where We Had to Decide</h2>
             <div className="corner">
-              <img src={graduate} className="graduate"/>
+              
               <p>
                 With Lexy's graduation only two months away, 
                 the two of us made the most of the time we had together which allowed us to learn more about
@@ -48,55 +44,71 @@ const OurStory = () => {
                 to achieve her education goals in the fall. With the two of us being so new and yet so 
                 familiar to the other, we didn't want to end things between us and so we 
                 continued to enjoy the time we had together. Once graduation day arrived in May, it was time to celebrate Lexy's new
+                accomplishment at her
+              graduation ceremony which is where Robert met her family for the first time. This was also right
+               before Lexy moved back to Oregon for the summer which preceded her trans-Atlantic move 
+              to England for her graduate program, so the time for us to 
               </p>
-              
+              <img src={graduate} className="graduate"/>
             </div>
             
             <p className='longtext'>
-                  accomplishment at her
-              graduation ceremony which is where Robert met her family for the first time. This was also right
-               before Lexy moved back to Oregon for the summer which preceded her trans-Atlantic move 
-              to England for her graduate program, so the time for us to make a decision about our
+                  make a decision about our
               relationship had come. Ultimately 
               we decided that even though distance would be rough, we would
               try to make things work over the long distance and eight hour time difference.
             </p>
             
           </div>
-          <p>
-            This culminated
-            in making a point to talk or text every single day and plan dates where we watched movies or 
-            played video games together, our favorite at that time was Baldur's Gate 3. We even went as 
-            far as flying to the other every four to six months for about a week at a time to make up 
-            for the time apart and go on dates like we did before. We even made time to see each other 
-            during important times while we were progressing our careers.
-          </p>
-          <img src={london}/>
-          <p>
-            This allowed us to travel to 
-            places we had never been: Rob to Bend, Oxford, and London where we did hikes and got to tour 
-            different areas and Lexy to Colorado Springs and Biloxi where we did our first escape room. 
-            We also spent several holidays together over this time and were there for each other during 
-            important life moments like Robert's baptism and Lexy's sister's wedding.
-          </p>
-          <img src={escape}/>
-          <p>
-            As you can imagine, long-distance wasn’t the easiest on our relationship - it never is for any 
-            relationship - but over time our romance flourished and was nourished by the strong foundation 
-            of intentionality and communication that we built because of our care for each other despite 
-            the distance. When February of 2025 came around, Robert surprised Lexy with a week-long trip 
-            across the British countryside from Oxford through the Cotswolds to Exmoor where Robert thought
-            he would propose but the gloomy British weather had other plans for us. The trip finished in 
-            London where we visited Kew Royal Botanical gardens where Rob then proposed in the formal 
-            gardens behind Kew Palace. 
-          </p>
-          <img src={festival}/>``
-          <img src={proposal}/>
-          <p>
-            Lexy said yes, and after finishing her graduate program, we moved 
+          <div className='growing_relationship'>
+            <h2>How We Kept Things Alive</h2>
+            <div>
+              <p className='longtext'>
+              This culminated
+              in making a point to talk or text every single day and plan dates where we watched movies or 
+              played video games together, our favorite at that time was Baldur's Gate 3. We even went as 
+              far as flying to the other every four to six months for about a week at a time to make up 
+              for the time apart and go on dates like we did before. We even made time to see each other 
+              during important times while we were progressing our careers.This allowed us to travel to 
+              places we had never been: Rob to Bend, Oxford, and London where we did hikes and got to tour 
+              different areas and Lexy to Colorado Springs and Biloxi where we did our first escape room. 
+              We also spent several holidays together over this time and were there for each other during 
+              important life moments like Robert's baptism and Lexy's sister's wedding.
+              </p>
+            </div>
+            <div className='trips'>
+              <img src={london}/>
+              <img src={escape}/> 
+              <img src={festival}/>
+            </div>
+                       
+          </div>
+
+          <div className='proposed'>
+            <h2>Where We Are Now</h2>
+            <div className='corner'>
+              <img src={proposal}/>
+              <p>
+                As you can imagine, long-distance wasn’t the easiest on our relationship - it never is for any 
+                relationship - but over time our romance flourished and was nourished by the strong foundation 
+                of intentionality and communication that we built because of our care for each other despite 
+                the distance. When February of 2025 came around, Robert surprised Lexy with a week-long trip 
+                across the British countryside from Oxford through the Cotswolds to Exmoor where Robert thought
+                he would propose but the gloomy British weather had other plans for us. The trip finished in 
+                London where we visited Kew Royal Botanical gardens where Rob then proposed in the formal 
+                gardens behind Kew Palace. Lexy said yes, and after finishing her graduate program, we moved 
             in together in Colorado Springs where we are now planning our wedding back in Oregon, and we 
             are so excited to see you there!
+              </p>
+              
+            </div>
+            
+          <p>
+            
           </p>
+          </div>
+          
+          
         </div>
       </div>
       
