@@ -118,6 +118,8 @@
             &.viewing{
                 display: flex;
                 width: 390px;
+                animation: slide3 800ms;
+                animation-fill-mode: forwards;
             }
             div{
                 .middle{
@@ -152,4 +154,13 @@
         }   
         
     }
+}
+@keyframes slide3 {
+	from {
+		transform: scaleX(.5);
+	}
+	to {
+		
+        transform: scaleX(1);
+	}
 }

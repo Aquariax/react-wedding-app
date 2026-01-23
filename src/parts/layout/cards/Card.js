@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { CardData } from './CardData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -15,7 +15,7 @@ const Card = ({ cards }) => {
 		setCurrent(current === length - 1 ? 0 : current + 1);
 	};
 	const prevCard = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1);
+		setCurrent(current === 0 ? length - 1 : current - 1)
 	};
 	return (
 		<div className='carousel' id='wedding-roles'>

@@ -51,7 +51,7 @@
         }       
     }
     @media #{$mobile}{
-        height: 400px;
+        height: 425px;
         background-repeat: no-repeat;
         background-size:500px 500px;
         .banner_window{
@@ -65,11 +65,12 @@
                 font-size: 22px;
             }
             .timer{
+                text-align: center;
                 .times{
                     font-size:20px;
                     margin: 12px 8px;
-                    padding: 10px 8px;
                     width: 40px;
+                    height: 40px;
                 }
             }
             .rsvp{

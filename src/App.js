@@ -8,6 +8,7 @@ import FAQ from './parts/layout/pages/FAQ';
 import Travel from './parts/layout/pages/Travel';
 import RSVP from './parts/layout/pages/RSVP'
 import GiftRegistry from './parts/layout/pages/GiftRegistry';
+import Notfound from './parts/layout/Notfound';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="travel" element={<Travel />}/>
       <Route path="gift_registry" element={<GiftRegistry />}/>
       <Route path="RSVP" element={<RSVP />}/>
+      <Route path="*" element={<Notfound/>}/>
     </Route>
   ))
 

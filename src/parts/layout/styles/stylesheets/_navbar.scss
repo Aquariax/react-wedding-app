@@ -79,8 +79,9 @@
             position: absolute;
             top: 85px;
             left: 0rem;
-            animation: slide2 500ms;
+            animation: slide2 400ms;
             animation-fill-mode: forwards;
+            
             .nav-menu {
                 display: flex;
                 flex-direction: column;
@@ -93,12 +94,16 @@
                     margin: 0 auto;
                     text-align: center;
                     text-decoration: none;
-                    color: $beige;
+                    color: white;
                 }
-                
+                .active{
+                    p{
+                        color: $beige; 
+                    }
+                }
             }
             &Close {
-                animation: slide 500ms;
+                animation: slide 400ms;
                 animation-fill-mode: forwards;
             }
                 
@@ -108,17 +113,19 @@
 }
 @keyframes slide {
     from {
-		transform: translateY(0);
+		
+        transform: translateY(-18rem) scaleY(0);
 	}
 	to {
-		transform: translateY(-18rem) scaleY(0);
+		transform: translateY(0);
 	}
 }
 @keyframes slide2 {
 	from {
-		transform: translateY(-18rem) scaleY(0);
+		transform: translateY(0);
 	}
 	to {
-		transform: translateY(0);
+		
+        transform: translateY(-18rem) scaleY(0);
 	}
 }

@@ -8,15 +8,14 @@ import { NavLink } from 'react-router-dom';
 const NavDropdown = (props) => {
 	return (
 		<div className={props.texts}>
-			
 			<div className='nav-menu'>
-				<NavDropdownItem><NavLink to="/"><p className='menu-nav_link'>Home</p></NavLink></NavDropdownItem>
-				<NavDropdownItem><NavLink to='/wedding_day'><p className='menu-nav_link'>Wedding Day</p></NavLink></NavDropdownItem>
-				<NavDropdownItem><NavLink to='/our_story'><p className='menu-nav_link'>Our Story</p></NavLink></NavDropdownItem>
-				<NavDropdownItem><NavLink to='/travel'><p className='menu-nav_link'>Travel</p></NavLink></NavDropdownItem>
-				<NavDropdownItem><NavLink to='/gift_registry'><p className='menu-nav_link'>Gift Registry</p></NavLink></NavDropdownItem>
-				<NavDropdownItem><NavLink to='/FAQ'><p className='menu-nav_link'>Q&A</p></NavLink></NavDropdownItem>
-				<NavDropdownItem><NavLink to='/RSVP'><p className='menu-nav_link'>Rsvp</p></NavLink></NavDropdownItem>
+				<NavLink to="/"><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Home</p></NavDropdownItem></NavLink>
+				<NavLink to='/wedding_day'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Wedding Day</p></NavDropdownItem></NavLink>
+				<NavLink to='/our_story'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Our Story</p></NavDropdownItem></NavLink>
+				<NavLink to='/travel'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Travel</p></NavDropdownItem></NavLink>
+				<NavLink to='/gift_registry'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Gift Registry</p></NavDropdownItem></NavLink>
+				<NavLink to='/FAQ'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Q&A</p></NavDropdownItem></NavLink>
+				<NavLink to='/RSVP'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Rsvp</p></NavDropdownItem></NavLink>
 			</div>
 		</div>
 	);

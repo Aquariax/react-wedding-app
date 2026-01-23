@@ -84,7 +84,7 @@
     position: absolute;
     top: 85px;
     left: 0rem;
-    animation: slide2 500ms;
+    animation: slide2 400ms;
     animation-fill-mode: forwards;
   }
   .desktop_navigation .dropdown .nav-menu, .desktop_navigation .dropdownClose .nav-menu {
@@ -100,28 +100,31 @@
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
+    color: white;
+  }
+  .desktop_navigation .dropdown .nav-menu .active p, .desktop_navigation .dropdownClose .nav-menu .active p {
     color: #d1b38e;
   }
   .desktop_navigation .dropdownClose, .desktop_navigation .dropdownCloseClose {
-    animation: slide 500ms;
+    animation: slide 400ms;
     animation-fill-mode: forwards;
   }
 }
 
 @keyframes slide {
   from {
-    transform: translateY(0);
+    transform: translateY(-18rem) scaleY(0);
   }
   to {
-    transform: translateY(-18rem) scaleY(0);
+    transform: translateY(0);
   }
 }
 @keyframes slide2 {
   from {
-    transform: translateY(-18rem) scaleY(0);
+    transform: translateY(0);
   }
   to {
-    transform: translateY(0);
+    transform: translateY(-18rem) scaleY(0);
   }
 }
 .carousel {
@@ -241,6 +244,8 @@
   .carousel .card.viewing {
     display: flex;
     width: 390px;
+    animation: slide3 800ms;
+    animation-fill-mode: forwards;
   }
   .carousel .card div .middle ul {
     margin: 0px 0px 0px -40px;
@@ -269,6 +274,14 @@
   }
 }
 
+@keyframes slide3 {
+  from {
+    transform: scaleX(0.5);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 body {
   margin: 0 auto;
   background-image: url(../../../pictures/pexels-jplenio-1114896.jpg);
@@ -300,6 +313,11 @@ body h2 {
 body p {
   font-size: 25px;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  body.no_scroll {
+    overflow: hidden;
+  }
 }
 
 .banner {
@@ -358,7 +376,7 @@ body p {
 }
 @media (max-width: 500px) {
   .banner {
-    height: 400px;
+    height: 425px;
     background-repeat: no-repeat;
     background-size: 500px 500px;
   }
@@ -371,11 +389,14 @@ body p {
   .banner .banner_window h3 {
     font-size: 22px;
   }
+  .banner .banner_window .timer {
+    text-align: center;
+  }
   .banner .banner_window .timer .times {
     font-size: 20px;
     margin: 12px 8px;
-    padding: 10px 8px;
     width: 40px;
+    height: 40px;
   }
   .banner .banner_window .rsvp {
     padding: 10px 16px;
@@ -525,14 +546,14 @@ body p {
 }
 .rsvp-form .form {
   width: 1000px;
-  height: 1502px;
+  height: 1510px;
   border: 0;
   background-color: rgba(39, 39, 39, 0.404);
 }
 @media (max-width: 500px) {
   .rsvp-form .form {
-    width: 410px;
-    height: 1802px;
+    width: 100%;
+    height: 1635px;
   }
 }
 
@@ -909,6 +930,13 @@ body p {
   .travel .activities .advice .shopping, .travel .activities .fun_times .shopping {
     margin-bottom: 0px;
   }
+}
+
+.lost {
+  background-image: url(../../../pictures/IMG_5650.JPG);
+  background-position: center;
+  background-size: 100vh;
+  height: 100vh;
 }
 
 .App {

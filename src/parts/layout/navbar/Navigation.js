@@ -16,11 +16,12 @@ const Navigation = () => {
 	const [state, setState] = useState({
 		open: false,
 		text: 'dropdown',
+		bodyChange: ""
 	});
 	const setter = () => {
 		!state.open
-		? setState({ open: true, text: 'dropdownClose' })
-		: setState({ open: false, text: 'dropdown' });
+		? setState({ open: true, text: 'dropdownClose', bodyChange: document.body.classList.add('no_scroll') } )
+		: setState({ open: false, text: 'dropdown',bodyChange: document.body.classList.remove('no_scroll') });
 	};
 
 	return (
