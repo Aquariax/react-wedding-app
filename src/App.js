@@ -15,7 +15,7 @@ import Notfound from './parts/layout/Notfound';
 function App() {
 
   const router = createBrowserRouter(createRoutesFromElements(
-    <Route path='/*' element={<RootLayout/>}>
+    <Route path='/' element={<RootLayout/>}>
       <Route index element={<Home />}/>
       <Route path="/wedding_day" element={<WeddingDay />}/>
       <Route path="/our_story" element={<OurStory/>}/>
