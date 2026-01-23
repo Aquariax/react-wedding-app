@@ -6,7 +6,7 @@ const WeddingDay = () => {
         <h1>WeddingDay</h1>
         <ul className="wedding_details">
           <li> Our wedding ceremony and reception will both take place at Dee Bar Weddings
-          in Powell Butte, Oregon (Insert address)</li>
+          in Powell Butte, Oregon (6402 SW Powell Butte Hwy, Powell Butte, OR 97753)</li>
           <li> The ceremony will begin at 4:30 pm and we ask that guests arrive and be seated
           by 4:00 pm.</li>
           <li> We ask that our guests dress appropriately for the occasion with semi-formal
