@@ -22,8 +22,8 @@ function App() {
       <Route path="/FAQ" element={<FAQ/>}/>
       <Route path="/travel" element={<Travel />}/>
       <Route path="/gift_registry" element={<GiftRegistry />}/>
-      <Route path={`/RSVP`} element={<RSVP />}/>
-      <Route path={`/*`} element={<Notfound/>}/>
+      <Route path="/RSVP" element={<RSVP />}/>
+      <Route path="/*" element={<Notfound/>}/>
     </Route>
   ))
 
