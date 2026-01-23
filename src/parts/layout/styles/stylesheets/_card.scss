@@ -47,7 +47,7 @@
 			    font-size: 1.5rem;
 			    color: $forest $orange;
                 position: relative;
-                top:325px;
+                top:342px;
                 left:10px;
 			    background-color: $beige;
 			    border: 3px solid $burgundy;
@@ -59,7 +59,7 @@
                 z-index: 1;
 			    font-size: 1.5rem;
                 position: relative;
-                top:325px;
+                top:342px;
                 right:10px;
 			    color: $forest $orange;
 			    background-color: $beige;
@@ -113,7 +113,7 @@
         @media #{$mobile}{
             width: 360px;
             margin: 20px auto;
-            height: 650px;
+            height: 685px;
             display: none;
             &.viewing{
                 display: flex;
