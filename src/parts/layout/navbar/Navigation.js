@@ -35,6 +35,7 @@ const Navigation = () => {
 					icon={<FontAwesomeIcon className="burger" icon="fas fa-bars special"/>}
 					set={setter}
 					opened={state.open}
+					onClick={window.scrollTo(0, 0)}
 				/>
 				<NavDropdown texts={state.text} set={setter} opened={state.open}/>
 			</NavBar>

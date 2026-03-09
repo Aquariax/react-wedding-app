@@ -10,7 +10,7 @@ const NavDropdown = (props) => {
 		<div className={props.texts}>
 			<div className='nav-menu'>
 				<NavLink to="/"><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Home</p></NavDropdownItem></NavLink>
-				<NavLink to='/wedding_day'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Wedding Day</p></NavDropdownItem></NavLink>
+				<NavLink to='/wedding_day' ><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Wedding Day</p></NavDropdownItem></NavLink>
 				<NavLink to='/our_story'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Our Story</p></NavDropdownItem></NavLink>
 				<NavLink to='/travel'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Travel</p></NavDropdownItem></NavLink>
 				<NavLink to='/gift_registry'><NavDropdownItem><p className='menu-nav_link' onClick={props.set}>Gift Registry</p></NavDropdownItem></NavLink>

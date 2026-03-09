@@ -1,6 +1,6 @@
 import attire from '../../pictures/wedding attire.jpg';
 import venue from '../../pictures/deebar.jpg'
-import food from '../../pictures/food.jpg'
+import food from '../../pictures/other-800x550.jpg'
 export const CardData = [
 	{
 		id: 1,
@@ -29,7 +29,13 @@ export const CardData = [
 		id: 3,
 		img: food,
 		title: 'Catering',
-		text: <ul><li>Catering information is still to come. Please check back later!</li></ul>
+		text: 
+			<ul>
+				<li>Cody's Country Catering will be providing catering services</li>
+				<li>The banquet will be composed of:</li>
+				<li>Meats:Grilled Tri-Tip or Garlic Herb Chicken Breast.</li>
+				<li>Side Choices: Roasted Red Potatoes, Grilled Asparagus and Vegetable Medley w/ Lemon Zest and sea salt, Baby Greens Salad w/ Cranberries, Feta, and Candied Pecans in a Balsamic Vinaigrette, and Fresh Baked Rolls w/ Butter.</li>
+			</ul>
 		
 	}
 ]

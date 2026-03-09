@@ -124,7 +124,7 @@ const FAQ = () => {
           <li> <h3>If I have more questions, who should I contact?</h3>
           <ul><li> Please feel free to reach out to Robert, Lexy, Amanda Gillette (541-639-
           5457) or Matt Gillette (541-848-8473) with any further questions prior to
-          the wedding day and Amber Gillette (503-301-7235) for day-of queries. As
+          the wedding day and Amber Gillette (530-301-7235) for day-of queries. As
           the wedding day approaches, we may provide an alternate point of contact
           on a case-by-case basis.
           </li></ul></li>
